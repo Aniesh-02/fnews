@@ -1,6 +1,6 @@
 # FNEWS
 
-A mobile-first latest-news web app. Search topics as chips, refresh the feed, and open each story at the original publisher.
+FNEWS is a mobile-first latest-news web app. Search any topic, refresh the feed, and open each story at the original publisher.
 
 ## Setup
 
