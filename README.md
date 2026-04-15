@@ -30,9 +30,10 @@ NEWS_LANGUAGE=en
 NEWS_COUNTRY=us
 ```
 
-5. Deploy.
+5. Set the Vercel project name to `fnews-aniesh`.
+6. Deploy.
 
-Vercel will give you a public `https://...vercel.app` URL. The frontend runs as the FNEWS web app, and `/api/news` runs as a secure serverless function so your API key is not exposed in the browser.
+Vercel will give you a public URL such as `https://fnews-aniesh.vercel.app` or another exact URL in the deployment screen. Use the URL Vercel gives you, not `https://fnews.vercel.app`, because that domain belongs to a different app. The frontend runs as the FNEWS web app, and `/api/news` runs as a secure serverless function so your API key is not exposed in the browser.
 
 ## Publish Online With Render
 
