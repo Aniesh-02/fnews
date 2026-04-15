@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fnews
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NEWS_PROVIDER
+        value: newsapi
+      - key: NEWS_LANGUAGE
+        value: en
+      - key: NEWS_COUNTRY
+        value: us
+      - key: NEWSAPI_KEY
+        sync: false

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FNEWS</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="top-panel">
+        <p class="brand">FNEWS</p>
+        <h1>Search any topic and get the latest news from original sources.</h1>
+        <form id="topicForm" class="topic-form">
+          <label for="topicInput">Search news topic</label>
+          <div class="input-row">
+            <input id="topicInput" type="search" placeholder="Search AI, cricket, finance, politics..." autocomplete="off" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+        <div id="topicChips" class="chips" aria-label="Selected topics"></div>
+        <div class="actions">
+          <button id="refreshButton" class="primary-button" type="button">Refresh latest</button>
+          <p id="statusText" class="status-text">Search a topic to begin.</p>
+        </div>
+      </section>
+
+      <section id="newsGrid" class="news-grid" aria-live="polite"></section>
+    </main>
+
+    <template id="topicSectionTemplate">
+      <section class="topic-section">
+        <div class="topic-heading">
+          <h2></h2>
+          <span></span>
+        </div>
+        <div class="article-list"></div>
+      </section>
+    </template>
+
+    <template id="articleTemplate">
+      <article class="article-card">
+        <img alt="" loading="lazy" />
+        <div class="article-copy">
+          <div class="meta-row">
+            <span class="source"></span>
+            <time></time>
+          </div>
+          <h3></h3>
+          <p></p>
+          <a target="_blank" rel="noreferrer">Read original</a>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
